@@ -39,7 +39,7 @@ public class LuckymoneyController {
 
     //使用表单验证@valid   创建红包(发红包)
     @PostMapping(value = "/luckymoney")
-    private Luckymoney create(@   Luckymoney luckymoney ,BindingResult bresult) {
+    private Luckymoney create(@Valid Luckymoney luckymoney ,BindingResult bresult) {
         if (bresult.hasErrors())
         {
             //获取错误信息
@@ -50,9 +50,6 @@ public class LuckymoneyController {
         luckymoney.setMoney(luckymoney.getMoney());
         return  respository .save(luckymoney);
     }
-
-
-
 
     //通过id查询红包
     @GetMapping(value = "/luckymoney/{id}")
