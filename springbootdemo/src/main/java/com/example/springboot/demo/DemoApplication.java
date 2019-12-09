@@ -1,13 +1,13 @@
-package com.example.mini_program;
+package com.example.springboot.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MiniProgramApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MiniProgramApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
 }
